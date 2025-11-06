@@ -18,6 +18,15 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // Ensure the audio source is set and reloaded when audioUrl changes
+    audio.src = audioUrl || "";
+    audio.load(); // Reload the audio element to apply new src
+
+    // Reset state for new audio
+    setIsPlaying(false);
+    setCurrentTime(0);
+    setDuration(0);
+
     const handleLoadedMetadata = () => {
       setDuration(audio.duration);
     };
@@ -40,7 +49,7 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("ended", handleEnded);
     };
-  }, []);
+  }, [audioUrl]); // Rerun effect when audioUrl changes
 
   const togglePlay = () => {
     const audio = audioRef.current;
