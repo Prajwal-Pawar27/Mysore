@@ -222,7 +222,7 @@ const Heritage = () => {
                   </div>
                 </div>
 
-                <AudioPlayer title={landmark.name} />
+                <AudioPlayer title={landmark.name} audioUrl={landmark.audioUrl} />
               </div>
             </div>
           </div>
