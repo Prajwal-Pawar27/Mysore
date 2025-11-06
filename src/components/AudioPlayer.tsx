@@ -9,6 +9,7 @@ interface AudioPlayerProps {
 }
 
 export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
+  console.log("AudioPlayer: Initial render with audioUrl", audioUrl);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
@@ -16,8 +17,12 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
 
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio) {
+      console.log("AudioPlayer useEffect: audioRef.current is null");
+      return;
+    }
 
+    console.log("AudioPlayer useEffect: Setting audio.src to", audioUrl);
     // Ensure the audio source is set and reloaded when audioUrl changes
     audio.src = audioUrl || "";
     audio.load(); // Reload the audio element to apply new src
@@ -28,14 +33,17 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
     setDuration(0);
 
     const handleLoadedMetadata = () => {
+      console.log("AudioPlayer: loadedmetadata event fired. Duration:", audio.duration);
       setDuration(audio.duration);
     };
 
     const handleTimeUpdate = () => {
+      // console.log("AudioPlayer: timeupdate event fired. Current time:", audio.currentTime);
       setCurrentTime(audio.currentTime);
     };
 
     const handleEnded = () => {
+      console.log("AudioPlayer: ended event fired.");
       setIsPlaying(false);
       setCurrentTime(0);
     };
@@ -45,6 +53,7 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
     audio.addEventListener("ended", handleEnded);
 
     return () => {
+      console.log("AudioPlayer useEffect: Cleaning up event listeners for", audioUrl);
       audio.removeEventListener("loadedmetadata", handleLoadedMetadata);
       audio.removeEventListener("timeupdate", handleTimeUpdate);
       audio.removeEventListener("ended", handleEnded);
@@ -53,19 +62,26 @@ export const AudioPlayer = ({ audioUrl, title }: AudioPlayerProps) => {
 
   const togglePlay = () => {
     const audio = audioRef.current;
-    if (!audio) return;
+    if (!audio) {
+      console.log("AudioPlayer togglePlay: audioRef.current is null");
+      return;
+    }
 
+    console.log("AudioPlayer togglePlay: isPlaying before toggle:", isPlaying);
     if (isPlaying) {
       audio.pause();
+      console.log("AudioPlayer togglePlay: Audio paused.");
     } else {
       try {
         audio.play();
+        console.log("AudioPlayer togglePlay: Attempting to play audio.");
       } catch (error) {
         console.error("Audio playback blocked:", error);
         // Optionally, you could set state here to show a message to the user
       }
     }
     setIsPlaying(!isPlaying);
+    console.log("AudioPlayer togglePlay: isPlaying after toggle:", !isPlaying);
   };
 
   const handleSliderChange = (value: number[]) => {
