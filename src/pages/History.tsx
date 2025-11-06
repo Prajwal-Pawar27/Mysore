@@ -145,7 +145,7 @@ const History = () => {
                     <p className="text-muted-foreground font-body leading-relaxed">
                       {item.description}
                     </p>
-                    <AudioPlayer title={item.title} />
+                    <AudioPlayer title={item.title} audioUrl={item.audioUrl} />
                   </div>
                 </div>
               </div>

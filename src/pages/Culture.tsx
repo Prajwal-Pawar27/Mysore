@@ -190,7 +190,7 @@ const Culture = () => {
                           {item.description}
                         </p>
                       </div>
-                      <AudioPlayer title={item.name} />
+                      <AudioPlayer title={item.name} audioUrl={item.audioUrl} />
                     </div>
                   </div>
                 ))}
