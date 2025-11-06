@@ -13,8 +13,9 @@ const History = () => {
       period: "2nd Century - 12th Century",
       title: "The Early Kingdoms",
       description:
-        "Mysore finds its roots in the ancient Mahishamandala kingdom. The region was ruled by various dynasties including the Gangas, Hoysalas, and Vijayanagara Empire, each contributing to its rich cultural tapestry.",
+        "The early Kingdom of Mysore began as a small jagirs (feudal land) under the rule of the Wodeyar dynasty in the late 14th century, originally serving as vassals to the Vijayanagara Empire. The capital was initially at Mysuru, and the Wodeyars gradually expanded their territory and administrative influence as Vijayanagara declined. The kingdom was known for its patronage of art, music, and temple architecture, helping Mysore develop a rich cultural identity. Later, under the rise of Hyder Ali and Tipu Sultan, Mysore transformed into a strong and modernized military state that resisted British expansion in South India. After Tipu Sultan’s fall in 1799, the British restored the Wodeyars, turning Mysore into a princely state under British supervision.",
       icon: Castle,
+      audioUrl: "/audio/early-kingdoms.mp3", // Assuming audio is in public/audio
     },
     {
       era: "The Wadiyar Dynasty",
@@ -23,6 +24,7 @@ const History = () => {
       description:
         "The Wadiyar dynasty established Mysore as a princely state in 1399. Under their patronage, the city flourished as a center of art, culture, and learning. The construction of the magnificent Mysore Palace began during their reign.",
       icon: Crown,
+      audioUrl: "/audio/rise-of-royal-mysore.mp3", // Assuming audio is in public/audio
     },
     {
       era: "Tipu Sultan's Era",
@@ -31,6 +33,7 @@ const History = () => {
       description:
         "Tipu Sultan, known as the Tiger of Mysore, briefly ruled the kingdom. His resistance against British colonialism and innovative military strategies made him a legendary figure in Indian history.",
       icon: Book,
+      audioUrl: "/audio/tipu-sultan.mp3", // Assuming audio is in public/audio
     },
     {
       era: "British Influence",
@@ -39,6 +42,7 @@ const History = () => {
       description:
         "After Tipu Sultan's defeat, the British restored the Wadiyar dynasty under their supervision. This period saw modernization of the city with public infrastructure, education, and administrative reforms.",
       icon: Castle,
+      audioUrl: "/audio/colonial-period.mp3", // Assuming audio is in public/audio
     },
     {
       era: "Modern Mysore",
@@ -47,6 +51,7 @@ const History = () => {
       description:
         "Post-independence, Mysore joined the Indian Union. Today, it stands as a testament to India's rich heritage, preserving its royal legacy while embracing progress as a major tourist and cultural destination.",
       icon: Crown,
+      audioUrl: "/audio/modern-mysore.mp3", // Assuming audio is in public/audio
     },
   ];
 
