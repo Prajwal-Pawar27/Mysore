@@ -12,7 +12,7 @@ const Heritage = () => {
       name: "Mysore Palace",
       location: "Sayyaji Rao Road, Mysuru",
       description:
-        "The crown jewel of Mysuru, this Indo-Saracenic architectural masterpiece serves as the official residence of the Wadiyar dynasty. Built in 1912, the palace features ornate domes, arches, and colonnades, and is illuminated by nearly 100,000 lights during special occasions.",
+        "Mysore Palace, also known as the Amba Vilas Palace, is one of India’s grandest royal residences and a symbol of the Wodeyar dynasty’s heritage and power. The current structure was completed in 1912 in an impressive Indo-Saracenic architectural style, blending elements of Hindu, Muslim, Rajput, and Gothic designs. The palace features ornate arches, domes, stained glass windows, intricately carved doors, and richly decorated halls such as the Diwan-e-Khas and Kalyana Mantapa. It houses beautiful paintings, royal artifacts, and gold-lined interiors that showcase the artistic and cultural patronage of the Mysore kings. Today, the Mysore Palace is a major cultural landmark, especially famous for its golden illumination during Dasara, attracting millions of visitors from around the world.",
       highlights: [
         "Durbar Hall with stained glass ceiling",
         "Golden Throne displayed during Dasara",
@@ -26,7 +26,7 @@ const Heritage = () => {
       name: "Chamundi Hills",
       location: "Chamundi Hill Road, Mysuru",
       description:
-        "Rising 1,000 meters above sea level, Chamundi Hills houses the ancient Chamundeshwari Temple dedicated to Goddess Chamundi. The climb of 1,000 steps passes by a magnificent 5-meter tall Nandi bull carved from a single granite rock in 1659.",
+        "Chamundi Hills is a sacred hill located on the outskirts of Mysore, deeply connected to the city’s spiritual and cultural identity. At the top stands the Chamundeshwari Temple, dedicated to Goddess Chamundeshwari, the patron deity of Mysore, who is believed to have slain the demon Mahishasura, symbolizing the victory of good over evil. A large Nandi statue, carved out of a single stone, sits midway up the hill and is one of the major attractions for visitors and pilgrims. The hill offers a panoramic view of Mysore city, including landmarks like the Mysore Palace. Chamundi Hills remains a popular spot for worship, nature visits, and cultural significance, especially during festivals like Dasara.",
       highlights: [
         "Chamundeshwari Temple with golden vimana",
         "Monolithic Nandi statue",
@@ -40,7 +40,7 @@ const Heritage = () => {
       name: "Brindavan Gardens",
       location: "Krishna Raja Sagara, Srirangapatna",
       description:
-        "A spectacular terraced garden built in 1927, featuring symmetrical design, fountains, and illuminated musical shows. Located below the Krishna Raja Sagara Dam, it's one of the finest examples of Mughal-style gardens in India.",
+        "Brindavan Gardens, located near the Krishna Raja Sagara (KRS) Dam, is one of the most famous tourist attractions of Mysore. Built during the reign of Krishnaraja Wodeyar IV and completed under the guidance of Sir Mirza Ismail, the gardens are known for their symmetric layout, terraced lawns, flower beds, and ornamental trees. A major highlight of the gardens is the musical fountain show, where water dances in rhythm to lights and music, creating a beautiful night-time spectacle. The gardens also feature boating facilities, illuminated walkways, and scenic water channels. Brindavan Gardens remains a popular spot for families and tourists, symbolizing Mysore’s elegance, planning, and love for nature and leisure.",
       highlights: [
         "Musical fountain show with lights",
         "Symmetrical terrace gardens",
@@ -54,7 +54,7 @@ const Heritage = () => {
       name: "St. Philomena's Cathedral",
       location: "Cathedral Church Road, Mysuru",
       description:
-        "One of the tallest churches in Asia, this Neo-Gothic architectural marvel was built in 1933. Inspired by Cologne Cathedral in Germany, it features stunning stained glass windows depicting biblical scenes, twin spires reaching 175 feet, and a crypt containing relics of St. Philomena.",
+        "St. Philomena’s Cathedral in Mysore is one of the largest and most beautiful churches in India, known for its striking Neo-Gothic architectural style. Built in 1956, it was inspired by the Cologne Cathedral in Germany and features tall pointed spires, stained glass windows, and high vaulted ceilings. The stained glass panels depict key events in the life of Jesus Christ, adding color and spiritual depth to the interiors. The church is dedicated to St. Philomena, a young saint and martyr, and houses a relic of hers in the crypt below the altar. Today, the cathedral stands as a prominent landmark of Mysore, symbolizing the city’s religious diversity, history, and architectural heritage.",
       highlights: [
         "Neo-Gothic architecture with twin spires",
         "Magnificent stained glass windows",
@@ -68,7 +68,7 @@ const Heritage = () => {
       name: "Jaganmohan Palace",
       location: "Mysore Palace Road, Mysuru",
       description:
-        "Built in 1861, this palace served as an alternate residence for the royal family and now houses the Sri Jayachamarajendra Art Gallery. It contains one of the finest collections of artifacts and paintings in South India.",
+        "Jaganmohan Palace is one of the oldest palaces in Mysore, built in 1861 by the Wodeyar kings and originally used as a residence and royal audience hall. It served as the royal palace when the current Mysore Palace was being reconstructed after the old one was damaged in a fire. The palace is now home to the Jayachamarajendra Art Gallery, which houses one of the finest collections of South Indian traditional paintings, including famous Mysore and Raja Ravi Varma paintings. The interiors of the palace feature beautiful wooden doors, murals, and intricate carvings that depict scenes from epics and royal history. Today, Jaganmohan Palace stands as an important cultural center, showcasing Mysore’s artistic legacy and royal heritage.",
       highlights: [
         "Royal family artifacts collection",
         "Traditional Mysore paintings",
