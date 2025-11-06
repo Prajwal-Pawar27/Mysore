@@ -3,9 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import cultureIcon from "@/assets/culture-icon.jpg";
+import { useState } from "react";
 
 const Culture = () => {
   const navigate = useNavigate();
+  const [currentPlayingId, setCurrentPlayingId] = useState<string | null>(null);
+
+  const handlePlay = (id: string | null) => {
+    setCurrentPlayingId(id);
+  };
 
   const culturalElements = [
     {
@@ -190,7 +196,13 @@ const Culture = () => {
                           {item.description}
                         </p>
                       </div>
-                      <AudioPlayer title={item.name} audioUrl={item.audioUrl} />
+                      <AudioPlayer 
+                        title={item.name} 
+                        audioUrl={item.audioUrl} 
+                        id={`culture-audio-${element.title.replace(/\s/g, '_')}-${itemIndex}`}
+                        currentPlayingId={currentPlayingId}
+                        onPlay={handlePlay}
+                      />
                     </div>
                   </div>
                 ))}

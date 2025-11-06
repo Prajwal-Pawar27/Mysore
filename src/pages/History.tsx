@@ -3,9 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import historyIcon from "@/assets/history1.jpg";
+import { useState } from "react";
 
 const History = () => {
   const navigate = useNavigate();
+  const [currentPlayingId, setCurrentPlayingId] = useState<string | null>(null);
+
+  const handlePlay = (id: string | null) => {
+    setCurrentPlayingId(id);
+  };
 
   const timeline = [
     {
@@ -145,7 +151,13 @@ const History = () => {
                     <p className="text-muted-foreground font-body leading-relaxed">
                       {item.description}
                     </p>
-                    <AudioPlayer title={item.title} audioUrl={item.audioUrl} />
+                    <AudioPlayer 
+                      title={item.title} 
+                      audioUrl={item.audioUrl} 
+                      id={`history-audio-${item.era.replace(/\s/g, '_')}-${index}`}
+                      currentPlayingId={currentPlayingId}
+                      onPlay={handlePlay}
+                    />
                   </div>
                 </div>
               </div>

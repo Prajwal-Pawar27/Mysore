@@ -3,9 +3,15 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { AudioPlayer } from "@/components/AudioPlayer";
 import heritageIcon from "@/assets/heritage-icon.jpg";
+import { useState } from "react";
 
 const Heritage = () => {
   const navigate = useNavigate();
+  const [currentPlayingId, setCurrentPlayingId] = useState<string | null>(null);
+
+  const handlePlay = (id: string | null) => {
+    setCurrentPlayingId(id);
+  };
 
   const landmarks = [
     {
@@ -222,7 +228,13 @@ const Heritage = () => {
                   </div>
                 </div>
 
-                <AudioPlayer title={landmark.name} audioUrl={landmark.audioUrl} />
+                <AudioPlayer 
+                  title={landmark.name} 
+                  audioUrl={landmark.audioUrl} 
+                  id={`heritage-audio-${landmark.name.replace(/\s/g, '_')}`}
+                  currentPlayingId={currentPlayingId}
+                  onPlay={handlePlay}
+                />
               </div>
             </div>
           </div>
