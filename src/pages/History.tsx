@@ -18,11 +18,11 @@ const History = () => {
       audioUrl: "/audio/early-kingdoms.mp3", // Assuming audio is in public/audio
     },
     {
-      era: "The Wadiyar Dynasty",
+      era: "The Wodeyar Dynasty",
       period: "1399 - 1947",
       title: "Rise of Royal Mysore",
       description:
-        "The Wadiyar dynasty established Mysore as a princely state in 1399. Under their patronage, the city flourished as a center of art, culture, and learning. The construction of the magnificent Mysore Palace began during their reign.",
+        "The rise of Royal Mysore began with the Wodeyar dynasty, who established their authority around Mysuru in the late 14th century and gradually expanded their territories. As the Vijayanagara Empire weakened in the 16th century, the Wodeyars asserted full independence and strengthened their administration and economy. The kingdom flourished culturally, supporting music, dance, literature, and temple architecture, which shaped Mysore’s identity as a center of art and tradition. In the 18th century, powerful leaders like Hyder Ali and Tipu Sultan modernized the state’s army and introduced economic and technological reforms, making Mysore one of the strongest regional powers in South India. After Tipu Sultan’s fall in 1799, the Wodeyars were reinstated under British influence, leading Mysore to develop into a well-governed princely state known for progress and public welfare.",
       icon: Crown,
       audioUrl: "/audio/rise-of-royal-mysore.mp3", // Assuming audio is in public/audio
     },
@@ -31,7 +31,7 @@ const History = () => {
       period: "1782 - 1799",
       title: "The Tiger of Mysore",
       description:
-        "Tipu Sultan, known as the Tiger of Mysore, briefly ruled the kingdom. His resistance against British colonialism and innovative military strategies made him a legendary figure in Indian history.",
+        "Tipu Sultan’s era (1782–1799) marked a period of strong resistance against British expansion and rapid modernization within the Kingdom of Mysore. He continued the reforms begun by his father, Hyder Ali, by strengthening the army with European-style training, advanced weaponry, and even the early use of rocket artillery. Tipu introduced new revenue systems, encouraged agriculture and trade, and developed state-run industries to boost the economy. He also maintained alliances with France and other Indian powers to resist British influence, leading to several Anglo-Mysore Wars. However, after prolonged conflict, Tipu Sultan was killed in the Fourth Anglo-Mysore War (1799), and his death marked the end of Mysore’s independent military power.",
       icon: Book,
       audioUrl: "/audio/tipu-sultan.mp3", // Assuming audio is in public/audio
     },
@@ -40,7 +40,7 @@ const History = () => {
       period: "1799 - 1947",
       title: "Colonial Period",
       description:
-        "After Tipu Sultan's defeat, the British restored the Wadiyar dynasty under their supervision. This period saw modernization of the city with public infrastructure, education, and administrative reforms.",
+        "During the colonial period, after Tipu Sultan’s defeat in 1799, the British re-established the Wodeyar dynasty but kept Mysore under their indirect control, making it a princely state within the British Empire. The British supervised administration and foreign affairs, while the Wodeyars handled local governance, leading to a mix of traditional monarchy and colonial oversight. Under British influence, Mysore saw the development of modern infrastructure such as railways, public education, postal systems, and administrative reforms. The Wodeyar rulers, especially Krishnaraja Wodeyar IV, promoted industrialization, public welfare, and the arts, earning Mysore the reputation of a “Model State.” However, the British retained ultimate authority, and Mysore’s autonomy was limited until India’s independence in 1947.",
       icon: Castle,
       audioUrl: "/audio/colonial-period.mp3", // Assuming audio is in public/audio
     },
@@ -49,7 +49,7 @@ const History = () => {
       period: "1947 - Present",
       title: "Heritage City",
       description:
-        "Post-independence, Mysore joined the Indian Union. Today, it stands as a testament to India's rich heritage, preserving its royal legacy while embracing progress as a major tourist and cultural destination.",
+        "After India gained independence in 1947, Mysore joined the Indian Union, and the Wodeyar king, Jayachamarajendra Wodeyar, served as the first Rajpramukh (state governor) of the newly formed Mysore State. In 1956, with the reorganization of states based on language, the territory expanded and Mysore State came to include Kannada-speaking regions from neighboring areas. Later, in 1973, the state was officially renamed Karnataka to represent its wider cultural and linguistic identity. Modern Mysore is known for its rich heritage, tourism, educational institutions, the IT industry, and cultural festivals like Dasara, which highlight its royal legacy. The city continues to blend tradition with modern development, maintaining its identity as a clean, peaceful, and culturally vibrant region.",
       icon: Crown,
       audioUrl: "/audio/modern-mysore.mp3", // Assuming audio is in public/audio
     },
